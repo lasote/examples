@@ -1,5 +1,5 @@
 [build_folder]
-build/{{settings.build_type}}
+../build/{{reference.name}}/{{settings.build_type}}
 
 [source_folder]
 src

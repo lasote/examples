@@ -7,6 +7,8 @@ class Pkg(ConanFile):
     generators = "cmake"
     exports_sources = "src/*"
     requires = "say/0.1@user/testing"
+    options = {"shared": [True, False]}
+    default_options = "shared=False"
 
     def build(self):
         cmake = CMake(self)
